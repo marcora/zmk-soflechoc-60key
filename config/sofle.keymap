@@ -116,11 +116,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans    &trans    &trans     &trans   &trans
-&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                    &trans     &trans       &trans       &trans    &trans    &trans  &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans    &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -154,13 +154,13 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "extra1";
+            display-name = "extra";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none       &none              &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none       &none              &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none       &none              &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none       &none              &none            &none  &none  &none
+              &none  &none  &none  &none  &none    &none  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
