@@ -15,7 +15,7 @@
 #define ADJUST 3
 #define extra_layer 4
 
-&mt { tapping-term-ms = <300>; };
+&mt { tapping-term-ms = <333>; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
