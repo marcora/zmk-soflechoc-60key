@@ -38,6 +38,20 @@
             #binding-cells = <0>;
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
+
+        escape: escape {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp ESC>;
+        };
+
+        delete: delete {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp DEL>;
+        };
     };
 
     macros {
@@ -72,7 +86,7 @@
             bindings = <
 &kp GRAVE                 &kp N1  &kp N2     &kp N3    &kp N4        &kp N5                                        &kp N6           &kp N7                      &kp N8     &kp N9   &kp N0    &mo 3
 &mt LS(LA(LC(LGUI))) TAB  &kp Q   &kp W      &kp E     &kp R         &kp T                                         &kp Y            &kp U                       &kp I      &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL ESC             &kp A   &kp S      &kp D     &kp F         &kp G                                         &kp H            &kp J                       &kp K      &kp L    &kp SEMI  &kp SQT
+&mt LCTRL ESC             &kp A   &kp S      &delete   &kp F         &kp G                                         &kp H            &escape                     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT                &kp Z   &kp X      &kp C     &kp V         &kp B               &kp MINUS    &kp EQUAL    &kp N            &kp M                       &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                                   &kp LCTRL  &kp LGUI  &mt LALT ESC  &mt LGUI BACKSPACE  &lt 1 TAB    &lt 2 ENTER  &mt RSHFT SPACE  &mt RS(RA(RC(RGUI))) PG_DN  &kp PG_UP  &mo 4
             >;
