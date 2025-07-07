@@ -52,6 +52,13 @@
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp DEL>;
         };
+
+        voldnmute: voldnmute {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOLDNMUTE";
+            #binding-cells = <0>;
+            bindings = <&kp C_VOL_DN>, <&kp C_MUTE>;
+        };
     };
 
     macros {
