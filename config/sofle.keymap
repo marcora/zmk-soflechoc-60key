@@ -137,7 +137,7 @@
 
             bindings = <
 &trans  &trans            &trans             &trans                &trans                 &trans                              &trans         &trans     &trans     &trans     &trans    &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                              &trans         &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                              &trans         &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &kp PIPE
 &trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                              &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp HOME  &kp END
 &trans  &trans            &trans             &trans                &trans                 &trans  &voldnmute    &kp C_VOL_UP  &kp BACKSLASH  &kp SLASH  &assign    &pipe      &trans    &trans
                           &trans             &trans                &trans                 &trans  &trans        &trans        &trans         &trans     &trans     &trans
