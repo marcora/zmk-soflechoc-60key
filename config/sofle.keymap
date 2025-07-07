@@ -52,6 +52,13 @@
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp DEL>;
         };
+
+        voldnmute: voldnmute {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOLDNMUTE";
+            #binding-cells = <0>;
+            bindings = <&kp C_VOL_DN>, <&kp K_MUTE>;
+        };
     };
 
     macros {
@@ -129,11 +136,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans            &trans             &trans                &trans                 &trans                                                                               &trans    &trans     &trans   &trans     &trans    &trans
-&trans  &trans            &trans             &kp EQUAL             &trans                 &trans                                                                               &trans    &kp UNDER  &trans   &trans     &kp PLUS  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                                                                               &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &kp HOME  &kp END
-&trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans    &kp MINUS  &assign  &pipe      &trans    &trans
-                          &trans             &trans                &trans                 &trans  &trans                                    &trans                             &trans    &trans     &trans   &trans
+&trans  &trans            &trans             &trans                &trans                 &trans                              &trans         &trans     &trans     &trans     &trans    &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                              &trans         &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &trans
+&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                              &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp HOME  &kp END
+&trans  &trans            &trans             &trans                &trans                 &trans  &voldnmute    &kp C_VOL_UP  &kp BACKSLASH  &kp SLASH  &assign    &pipe      &trans    &trans
+                          &trans             &trans                &trans                 &trans  &trans        &trans        &trans         &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
