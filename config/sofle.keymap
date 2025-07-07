@@ -176,11 +176,11 @@
 
             display-name = "extra";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none       &none         &none         &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none       &none         &none         &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none       &none         &none         &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none       &none         &none         &none  &none  &none
-              &none  &none  &none  &none  &none    &none  &kp K_MUTE  &kp K_VOL_DN  &kp K_VOL_UP  &none
+&none  &none  &none  &none  &none  &none                  &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none   &none   &none   &none  &none  &none
+              &none  &none  &none  &none  &none    &none  &trans  &trans  &trans  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
