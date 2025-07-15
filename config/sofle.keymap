@@ -117,10 +117,6 @@
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
                      &trans  &trans    &trans    &trans     &trans              &trans             &trans     &trans    &trans    &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         raise_layer {
@@ -140,10 +136,6 @@
 &trans  &none             &none              &none                 &none                  &none      &voldnmute    &kp C_VOL_UP  &none         &none      &assign         &pipe      &none     &trans
                           &trans             &trans                &trans                 &trans     &trans        &trans        &trans        &trans     &trans          &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
@@ -162,10 +154,6 @@
 &none           &none         &none         &none         &none         &none           &ext_power EP_OFF    &ext_power EP_ON  &none  &none  &none  &none  &none  &none
                               &none         &none         &none         &none           &none                &none             &none  &none  &none  &none
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         extra_layer {
@@ -184,10 +172,6 @@
 &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
               &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
