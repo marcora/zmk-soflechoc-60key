@@ -91,11 +91,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE                 &kp N1  &kp N2     &kp N3    &kp N4        &kp N5                                        &kp N6           &kp N7                      &kp N8     &kp N9   &kp N0    &mo 3
-&mt LS(LA(LC(LGUI))) TAB  &kp Q   &kp W      &kp E     &kp R         &kp T                                         &kp Y            &kp U                       &kp I      &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL ESC             &kp A   &kp S      &kp D     &kp F         &kp G                                         &kp H            &kp J                       &kp K      &kp L    &kp SEMI  &kp SQT
-&mt LSHIFT ENTER          &kp Z   &kp X      &kp C     &kp V         &kp B               &kp MINUS    &kp EQUAL    &kp N            &kp M                       &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BACKSPACE
-                                  &kp LCTRL  &kp LGUI  &mt LALT ESC  &mt RGUI BACKSPACE  &lt 1 TAB    &lt 2 ENTER  &mt RSHFT SPACE  &mt RS(RA(RC(RGUI))) PG_DN  &kp PG_UP  &mo 4
+&mo 3                     &kp N1  &kp N2         &kp N3      &kp N4     &kp N5                                                     &kp N6           &kp N7         &kp N8         &kp N9       &kp N0    &mo 4
+&mt LS(LA(LC(LGUI))) TAB  &kp Q   &kp W          &kp E       &kp R      &kp T                                                      &kp Y            &kp U          &kp I          &kp O        &kp P     &kp BACKSLASH
+&kp GRAVE                 &kp A   &kp S          &kp D       &kp F      &kp G                                                      &kp H            &kp J          &kp K          &kp L        &kp SEMI  &kp SQT
+&kp MINUS                 &kp Z   &kp X          &kp C       &kp V      &kp B               &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N            &kp M          &kp COMMA      &kp DOT      &kp FSLH  &kp EQUAL
+                                  &kp BACKSPACE  &kp DELETE  &kp LCTRL  &mt RGUI BACKSPACE  &lt 1 ESCAPE        &lt 2 ENTER        &mt RSHFT SPACE  &kp RIGHT_ALT  &kp PAGE_DOWN  &kp PAGE_UP
             >;
         };
 
@@ -111,12 +111,16 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &trans    &trans  &trans    &trans    &trans                                            &trans     &trans    &trans    &trans    &trans    &trans
-&kp F12    &kp F1    &kp F2  &kp F3    &kp F4    &kp F5                                            &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
-&kp GRAVE  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                                            &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
-                     &trans  &trans    &trans    &trans     &trans              &trans             &trans     &trans    &trans    &trans
+&trans  &trans    &trans  &trans    &trans    &trans                       &trans     &trans    &trans    &trans    &trans    &trans
+&none   &kp F1    &kp F2  &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
+&none   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp F12
+&none   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &trans    &trans  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
+                  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans    &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         raise_layer {
@@ -130,12 +134,16 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans            &trans             &trans                &trans                 &trans                                 &trans        &trans     &trans          &trans     &trans    &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE                              &kp QUESTION  &kp MINUS  &kp UNDERSCORE  &kp EQUAL  &kp PLUS  &kp PIPE
-&trans  &kp BACKSLASH     &kp SLASH          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE                              &kp LEFT      &kp DOWN   &kp UP          &kp RIGHT  &kp HOME  &kp END
-&trans  &none             &none              &none                 &none                  &none      &voldnmute    &kp C_VOL_UP  &none         &none      &assign         &pipe      &none     &trans
-                          &trans             &trans                &trans                 &trans     &trans        &trans        &trans        &trans     &trans          &trans
+&trans          &trans            &trans                &trans                 &trans             &trans                             &trans    &trans    &trans   &trans     &trans         &trans
+&none           &none             &none                 &none                  &none              &none                              &none     &none     &none    &none      &kp BACKSPACE  &kp DELETE
+&kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE                    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp HOME       &kp END
+&none           &none             &none                 &none                  &none              &none            &trans    &trans  &none     &none     &assign  &pipe      &kp PAGE_DOWN  &kp PAGE_UP
+                                  &trans                &trans                 &trans             &trans           &trans    &trans  &trans    &trans    &trans   &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
