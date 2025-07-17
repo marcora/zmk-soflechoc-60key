@@ -65,14 +65,14 @@
         assign: assign {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp MINUS>;
+            bindings = <&kp SPACE &kp LT &kp MINUS &kp SPACE>;
             label = "ASSIGN";
         };
 
         pipe: pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PIPE &kp GT>;
+            bindings = <&kp SPACE &kp PIPE &kp GT &kp SPACE>;
             label = "PIPE";
         };
     };
