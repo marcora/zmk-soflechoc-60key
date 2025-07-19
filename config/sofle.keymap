@@ -29,7 +29,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        extra {
+            bindings = <&mo 4>;
+            key-positions = <54 55>;
+        };
+    };
 
     behaviors {
         caps: caps {
