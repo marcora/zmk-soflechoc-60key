@@ -39,20 +39,6 @@
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
 
-        escape: escape {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&kp ESC>;
-        };
-
-        delete: delete {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&kp DEL>;
-        };
-
         voldnmute: voldnmute {
             compatible = "zmk,behavior-tap-dance";
             label = "VOLDNMUTE";
