@@ -15,9 +15,6 @@
 #define ADJUST 3
 #define extra_layer 4
 
-&mt {
-};
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
