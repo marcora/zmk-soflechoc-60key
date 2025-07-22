@@ -27,7 +27,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        jkesc {
+            bindings = <&kp ESC>;
+            key-positions = <31 32>;
+        };
+    };
 
     behaviors {
         caps: caps {
