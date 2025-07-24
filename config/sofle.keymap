@@ -114,8 +114,8 @@
 
             bindings = <
 &none      &none         &none         &none         &none         &none                                        &none         &none         &none         &none         &none         &none
-&kp F12    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                       &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp ENTER
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
+&kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                    &kp CARET     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &kp ENTER
 &none      &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none         &none         &none         &none         &none         &none
                          &trans        &trans        &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans
             >;
@@ -136,11 +136,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none  &none             &none              &none           &none            &none                                  &none     &none          &none        &none          &none       &none
-&none  &none             &none              &none           &none            &none                                  &none     &kp PAGE_DOWN  &kp PAGE_UP  &kp BACKSPACE  &kp DELETE  &none
-&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none                                  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT      &kp HOME    &kp END
-&none  &none             &none              &none           &none            &none   &voldnmute    &kp C_VOLUME_UP  &none     &none          &assign      &pipe          &none       &none
-                         &trans             &trans          &trans           &trans  &trans        &trans           &trans    &trans         &trans       &trans
+&none  &none             &none              &none           &none            &none                                     &none     &none          &none        &none      &none       &none
+&none  &none             &none              &none           &none            &kp TILDE                                 &none     &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME   &kp END     &kp BACKSPACE
+&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE                                 &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp DELETE  &kp ENTER
+&none  &none             &none              &none           &none            &none      &voldnmute    &kp C_VOLUME_UP  &none     &none          &assign      &pipe      &none       &none
+                         &trans             &trans          &trans           &trans     &trans        &trans           &trans    &trans         &trans       &trans
             >;
 
             sensor-bindings =
@@ -158,10 +158,10 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                           &none   &none   &none   &none   &none  &none
-&none           &none         &none         &none         &none         &studio_unlock                                         &none   &none   &none   &none   &none  &none
-&none           &none         &none         &none         &none         &none                                                  &none   &none   &none   &none   &none  &none
-&none           &none         &none         &none         &none         &none           &ext_power EP_OFF    &ext_power EP_ON  &none   &none   &none   &none   &none  &none
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                           &none   &none   &none   &none   &none    &none
+&none           &none         &none         &none         &none         &studio_unlock                                         &none   &none   &none   &none   &none    &none
+&kp F12         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                                 &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&none           &none         &none         &none         &none         &none           &ext_power EP_OFF    &ext_power EP_ON  &none   &none   &none   &none   &none    &none
                               &trans        &trans        &trans        &trans          &trans               &trans            &trans  &trans  &trans  &trans
             >;
         };
