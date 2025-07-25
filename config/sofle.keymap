@@ -136,11 +136,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none  &none      &none      &none      &none     &none                                     &none     &none          &none        &none      &none       &none
-&none  &none      &none      &none      &none     &kp TILDE                                 &none     &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME   &kp END     &kp BACKSPACE
-&none  &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &kp GRAVE                                 &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp DELETE  &kp ENTER
-&none  &none      &none      &none      &none     &none      &voldnmute    &kp C_VOLUME_UP  &none     &none          &assign      &pipe      &none       &none
-                  &trans     &trans     &trans    &trans     &trans        &trans           &trans    &trans         &trans       &trans
+&none      &none      &none      &none      &none     &none                                     &none     &none          &none        &none      &none       &none
+&none      &none      &none      &none      &none     &none                                     &none     &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME   &kp END     &kp BACKSPACE
+&kp TILDE  &kp MINUS  &kp UNDER  &kp EQUAL  &kp PLUS  &kp GRAVE                                 &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp DELETE  &kp ENTER
+&none      &none      &none      &none      &none     &none      &voldnmute    &kp C_VOLUME_UP  &none     &none          &assign      &pipe      &none       &none
+                      &trans     &trans     &trans    &trans     &trans        &trans           &trans    &trans         &trans       &trans
             >;
 
             sensor-bindings =
