@@ -34,6 +34,11 @@
             bindings = <&kp TAB>;
             key-positions = <31 32>;
         };
+
+        dfdel {
+            bindings = <&kp DEL>;
+            key-positions = <27 28>;
+        };
     };
 
     behaviors {
