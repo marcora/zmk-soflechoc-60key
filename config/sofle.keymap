@@ -31,7 +31,7 @@
         compatible = "zmk,combos";
 
         jkesc {
-            bindings = <&kp ESC>;
+            bindings = <&kp TAB>;
             key-positions = <31 32>;
         };
     };
@@ -97,7 +97,7 @@
 &kp TAB                      &kp Q   &kp W                       &kp E                       &kp R               &kp T                                         &kp Y                     &kp U                       &kp I                        &kp O                 &kp P     &kp BACKSLASH
 &mt LCTRL ESCAPE             &kp A   &kp S                       &kp D                       &kp F               &kp G                                         &kp H                     &kp J                       &kp K                        &kp L                 &kp SEMI  &kp SQT
 &mt LEFT_SHIFT LEFT_BRACKET  &kp Z   &kp X                       &kp C                       &kp V               &kp B               &kp MINUS    &kp EQUAL    &kp N                     &kp M                       &kp COMMA                    &kp DOT               &kp FSLH  &mt RIGHT_SHIFT RIGHT_BRACKET
-                                     &mt LCTRL LG(LEFT_BRACKET)  &mt LGUI LG(RIGHT_BRACKET)  &mt LALT BACKSLASH  &mt LGUI BACKSPACE  &lt 1 TAB    &lt 2 ENTER  &shiftspace RSHIFT SPACE  &mt RS(RA(RC(RGUI))) SLASH  &mt RS(RA(RCTRL)) PAGE_DOWN  &mt RA(RGUI) PAGE_UP
+                                     &mt LCTRL LG(LEFT_BRACKET)  &mt LGUI LG(RIGHT_BRACKET)  &mt LALT BACKSLASH  &mt LGUI BACKSPACE  &lt 1 ESC    &lt 2 ENTER  &shiftspace RSHIFT SPACE  &mt RS(RA(RC(RGUI))) SLASH  &mt RS(RA(RCTRL)) PAGE_DOWN  &mt RA(RGUI) PAGE_UP
             >;
         };
 
