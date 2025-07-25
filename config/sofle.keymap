@@ -30,7 +30,7 @@
     combos {
         compatible = "zmk,combos";
 
-        jkesc {
+        jktab {
             bindings = <&kp TAB>;
             key-positions = <31 32>;
         };
