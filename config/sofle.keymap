@@ -54,6 +54,8 @@
             label = "VOLDNMUTE";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp C_MUTE>;
+
+            tapping-term-ms = <300>;
         };
 
         shiftspace: shiftspace {
