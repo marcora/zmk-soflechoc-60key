@@ -121,7 +121,7 @@
 &none      &none         &none         &none         &none         &none                                        &none         &none         &none         &none         &none         &none
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
 &kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                    &kp CARET     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &kp ENTER
-&none      &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none         &none         &assign       &pipe         &none         &none
+&trans     &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none         &none         &assign       &pipe         &none         &trans
                          &trans        &trans        &trans        &trans        &trans        &trans           &trans        &trans        &trans        &trans
             >;
         };
@@ -140,7 +140,7 @@
 &none      &none         &none         &none         &none         &none                                        &none         &none          &none        &none      &none     &none
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp QUESTION  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME   &kp PIPE  &kp BACKSPACE
 &kp TILDE  &kp MINUS     &kp UNDER     &kp EQUAL     &kp PLUS      &kp GRAVE                                    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT  &kp END   &kp ENTER
-&none      &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none         &none          &assign      &pipe      &none     &none
+&trans     &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none         &none          &assign      &pipe      &none     &trans
                          &trans        &trans        &trans        &trans        &trans        &trans           &trans        &trans         &trans       &trans
             >;
         };
