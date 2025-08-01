@@ -124,7 +124,7 @@
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
 &kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                    &kp CARET     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &kp ENTER
 &trans     &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none         &none         &none         &none         &none         &trans
-                         &trans        &trans        &trans        &trans        &trans        &kp LS(ENTER)    &trans        &trans        &trans        &trans
+                         &trans        &trans        &trans        &trans        &none         &kp LS(ENTER)    &trans        &trans        &trans        &trans
             >;
         };
 
@@ -143,7 +143,7 @@
 &none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                                 &assign   &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME   &pipe    &kp BACKSPACE
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                 &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp END  &kp ENTER
 &trans  &none   &none   &none   &none   &none   &voldnmute    &kp C_VOLUME_UP  &none     &none          &none        &none      &none    &trans
-                &trans  &trans  &trans  &trans  &trans        &trans           &trans    &trans         &trans       &trans
+                &trans  &trans  &trans  &trans  &none         &none            &trans    &trans         &trans       &trans
             >;
         };
 
@@ -161,7 +161,7 @@
 &none           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                                 &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
 &trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F12
 &trans          &none         &none         &none         &none         &studio_unlock  &ext_power EP_OFF    &ext_power EP_ON  &none         &none         &none         &none         &none         &trans
-                              &trans        &trans        &trans        &trans          &trans               &trans            &trans        &trans        &trans        &trans
+                              &trans        &trans        &trans        &trans          &none                &none             &trans        &trans        &trans        &trans
             >;
         };
 
@@ -175,11 +175,11 @@
 
             display-name = "extra";
             bindings = <
-&none   &none  &none   &none   &none   &none                     &none   &none   &none   &none   &none  &none
-&none   &none  &none   &none   &none   &none                     &none   &none   &none   &none   &none  &none
-&none   &none  &none   &none   &none   &none                     &none   &none   &none   &none   &none  &none
-&trans  &none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none  &trans
-               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&none   &none  &none   &none   &none   &none                   &none   &none   &none   &none   &none  &none
+&none   &none  &none   &none   &none   &none                   &none   &none   &none   &none   &none  &none
+&none   &none  &none   &none   &none   &none                   &none   &none   &none   &none   &none  &none
+&trans  &none  &none   &none   &none   &none   &none    &none  &none   &none   &none   &none   &none  &trans
+               &trans  &trans  &trans  &trans  &none    &none  &trans  &trans  &trans  &trans
             >;
         };
     };
