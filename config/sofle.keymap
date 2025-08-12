@@ -100,11 +100,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE              &kp N1  &kp N2                      &kp N3                      &kp N4              &kp N5                                                     &kp N6                    &kp N7                      &kp N8     &kp N9     &kp N0    &mo 3
-&mt LS(LA(LCTRL)) TAB  &kp Q   &kp W                       &kp E                       &kp R               &kp T                                                      &kp Y                     &kp U                       &kp I      &kp O      &kp P     &kp BACKSLASH
-&mt LCTRL ESCAPE       &kp A   &kp S                       &kp D                       &kp F               &kp G                                                      &kp H                     &kp J                       &kp K      &kp L      &kp SEMI  &kp SQT
-&mt LEFT_SHIFT MINUS   &kp Z   &kp X                       &kp C                       &kp V               &kp B               &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N                     &kp M                       &kp COMMA  &kp DOT    &kp FSLH  &mt RIGHT_SHIFT EQUAL
-                               &mt LCTRL LG(LEFT_BRACKET)  &mt LGUI LG(RIGHT_BRACKET)  &mt LALT BACKSLASH  &mt LGUI BACKSPACE  &lt 1 ESC           &lt 2 ENTER        &shiftspace RSHIFT SPACE  &mt RS(RA(RC(RGUI))) SLASH  &kp PG_DN  &kp PG_UP
+&kp GRAVE                &kp N1  &kp N2                      &kp N3                      &kp N4              &kp N5                                                     &kp N6                    &kp N7                      &kp N8     &kp N9     &kp N0    &mo 3
+&mt LS(LA(LCTRL)) GRAVE  &kp Q   &kp W                       &kp E                       &kp R               &kp T                                                      &kp Y                     &kp U                       &kp I      &kp O      &kp P     &kp BACKSLASH
+&mt LCTRL TAB            &kp A   &kp S                       &kp D                       &kp F               &kp G                                                      &kp H                     &kp J                       &kp K      &kp L      &kp SEMI  &kp SQT
+&mt LEFT_SHIFT MINUS     &kp Z   &kp X                       &kp C                       &kp V               &kp B               &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N                     &kp M                       &kp COMMA  &kp DOT    &kp FSLH  &mt RIGHT_SHIFT EQUAL
+                                 &mt LCTRL LG(LEFT_BRACKET)  &mt LGUI LG(RIGHT_BRACKET)  &mt LALT BACKSLASH  &mt LGUI BACKSPACE  &lt 1 ESC           &lt 2 ENTER        &shiftspace RSHIFT SPACE  &mt RS(RA(RC(RGUI))) SLASH  &kp PG_DN  &kp PG_UP
             >;
         };
 
@@ -123,7 +123,7 @@
 &none      &none         &none         &none         &none         &none                                        &none          &none         &none         &none         &none         &none
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                 &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
 &kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                    &kp CARET      &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &kp ENTER
-&trans     &none         &none         &none         &none         &none         &voldnmute    &kp C_VOLUME_UP  &none          &none         &none         &none         &none         &trans
+&kp F12    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &voldnmute    &kp C_VOLUME_UP  &kp F6         &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
                          &trans        &trans        &trans        &trans        &trans        &trans           &kp RS(ENTER)  &trans        &trans        &trans
             >;
         };
@@ -139,11 +139,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none   &none   &none   &none   &none   &none                                  &none     &none          &none        &none      &none    &none
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                                 &assign   &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME   &pipe    &kp BACKSPACE
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                 &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp END  &kp ENTER
-&trans  &none   &none   &none   &none   &none   &voldnmute    &kp C_VOLUME_UP  &none     &none          &none        &none      &none    &trans
-                &trans  &trans  &trans  &trans  &trans        &trans           &trans    &trans         &trans       &trans
+&none   &none   &none   &none   &none   &none                                  &none                 &none                  &none           &none            &none          &none
+&trans  &none   &none   &none   &none   &none                                  &none                 &assign                &pipe           &kp HOME         &kp END        &kp BACKSPACE
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                 &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT        &kp PAGE_UP    &kp ENTER
+&trans  &none   &none   &none   &none   &none   &voldnmute    &kp C_VOLUME_UP  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PAGE_DOWN  &trans
+                &trans  &trans  &trans  &trans  &trans        &trans           &trans                &trans                 &trans          &trans
             >;
         };
 
@@ -157,11 +157,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                           &none         &none         &none         &none         &none         &none
-&trans          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                                 &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
-&trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F12
-&trans          &none         &none         &none         &none         &studio_unlock  &ext_power EP_OFF    &ext_power EP_ON  &none         &none         &none         &none         &none         &trans
-                              &trans        &trans        &trans        &trans          &trans               &trans            &trans        &trans        &trans        &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                           &none   &none   &none   &none   &none  &none
+&none           &none         &none         &none         &none         &studio_unlock                                         &none   &none   &none   &none   &none  &none
+&none           &none         &none         &none         &none         &none                                                  &none   &none   &none   &none   &none  &none
+&trans          &none         &none         &none         &none         &none           &ext_power EP_OFF    &ext_power EP_ON  &none   &none   &none   &none   &none  &trans
+                              &trans        &trans        &trans        &trans          &trans               &trans            &trans  &trans  &trans  &trans
             >;
         };
 
