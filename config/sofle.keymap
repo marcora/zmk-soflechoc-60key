@@ -43,6 +43,24 @@
             #binding-cells = <0>;
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
+
+        voldn_mute: voldn_mute {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOLDN_MUTE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp K_VOL_DN>, <&kp K_MUTE>;
+
+            tapping-term-ms = <250>;
+        };
+
+        volup_play: volup_play {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOLUP_PLAY";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp K_VOL_UP>, <&kp K_PLAY_PAUSE>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     keymap {
