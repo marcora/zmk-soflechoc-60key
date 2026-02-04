@@ -79,6 +79,15 @@
 
             tapping-term-ms = <250>;
         };
+
+        i_esc: i_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp ESCAPE>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     macros {
