@@ -61,6 +61,40 @@
 
             tapping-term-ms = <250>;
         };
+
+        lbrckt_assign: lbrckt_assign {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LBRCKT_ASSIGN";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&assign>;
+
+            tapping-term-ms = <250>;
+        };
+
+        rbrckt_pipe: rbrckt_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RBRCKT_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACE>, <&pipe>;
+
+            tapping-term-ms = <250>;
+        };
+    };
+
+    macros {
+        assign: assign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp LT &kp MINUS &kp SPACE>;
+            label = "ASSIGN";
+        };
+
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp MINUS &kp GT &kp SPACE>;
+            label = "PIPE";
+        };
     };
 
     keymap {
@@ -99,11 +133,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F12  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7     &kp F8     &kp F9                &kp F10                &kp F11
-&trans   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                       &kp N6     &kp N7     &kp N8     &kp N9                &kp N0                 &trans
-&trans   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                    &kp MINUS  &kp EQUAL  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp F12  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &trans    &trans  &kp F6     &kp F7     &kp F8     &kp F9                &kp F10                &kp F11
-                   &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans     &trans     &trans
+&trans   &trans               &trans               &trans             &trans               &trans                              &trans     &trans                   &trans                  &trans                              &trans                             &trans
+&trans   &kp N1               &kp N2               &kp N3             &kp N4               &kp N5                              &kp N6     &kp N7                   &kp N8                  &kp N9                              &kp N0                             &trans
+&trans   &mt LEFT_SHIFT EXCL  &mt LEFT_CONTROL AT  &mt LEFT_ALT HASH  &mt LEFT_GUI DOLLAR  &kp PRCNT                           &kp CARET  &mt RIGHT_GUI AMPERSAND  &mt RIGHT_ALT ASTERISK  &mt RIGHT_CONTROL LEFT_PARENTHESIS  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &trans
+&kp F12  &kp F1               &kp F2               &kp F3             &kp F4               &kp F5     &trans    &trans         &kp F6     &kp F7                   &kp F8                  &kp F9                              &kp F10                            &kp F11
+                              &trans               &trans             &trans               &trans     &trans    &kp BACKSLASH  &trans     &trans                   &trans                  &trans
             >;
 
             sensor-bindings =
@@ -122,11 +156,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN  &kp DOWN  &kp RIGHT  &kp END  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME  &trans    &trans    &trans     &trans   &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &trans            &trans        &trans        &trans                       &trans     &trans          &trans           &trans          &trans        &trans
+&trans  &trans          &trans            &trans        &trans        &trans                       &kp CARET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &lbrckt_assign  &rbrckt_pipe  &kp DOLLAR
+&trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans                       &kp LEFT   &kp DOWN        &kp UP           &kp RIGHT       &kp END       &kp PERCENT
+&trans  &trans          &trans            &trans        &trans        &trans  &trans       &trans  &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP      &kp HASH        &kp ASTERISK  &kp BACKSLASH
+                        &trans            &trans        &trans        &trans  &kp SLASH    &trans  &trans     &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
