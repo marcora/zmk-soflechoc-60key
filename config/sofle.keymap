@@ -101,7 +101,7 @@
         pipe: pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp MINUS &kp GT &kp SPACE>;
+            bindings = <&kp SPACE &kp PIPE &kp GT &kp SPACE>;
             label = "PIPE";
         };
     };
