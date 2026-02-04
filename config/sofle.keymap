@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "VOLDN_MUTE";
             #binding-cells = <0>;
-            bindings = <&kp K_VOLUME_DOWN>, <&kp K_MUTE>;
+            bindings = <&kp C_VOLUME_DOWN>, <&kp C_MUTE>;
 
             tapping-term-ms = <250>;
         };
@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "VOLUP_PLAY";
             #binding-cells = <0>;
-            bindings = <&kp K_VOLUME_UP>, <&kp K_PLAY_PAUSE>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_PLAY_PAUSE>;
 
             tapping-term-ms = <250>;
         };
