@@ -120,11 +120,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LEFT_BRACKET  &kp N1            &kp N2              &kp N3               &kp N4          &kp N5                                              &kp N6                           &kp N7           &kp N8           &kp N9               &kp N0                &kp RIGHT_BRACKET
-&kp MINUS         &kp Q             &kp W               &kp E                &kp R           &kp T                                               &kp Y                            &kp U            &i_esc           &kp O                &kp P                 &kp EQUAL
-&kp GRAVE         &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D       &mt LEFT_GUI F  &kp G                                               &kp H                            &mt RIGHT_GUI J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMI  &kp SQT
-&kp CAPSLOCK      &kp Z             &kp X               &kp C                &kp V           &kp B                   &voldn_mute    &volup_play  &kp N                            &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp BACKSLASH
-                                    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp ESCAPE      &mt LEFT_GUI BACKSPACE  &lt 1 TAB      &lt 2 ENTER  &mt RS(RA(RC(RIGHT_GUI))) SPACE  &kp DELETE       &kp PAGE_DOWN    &kp PAGE_UP
+&kp ESCAPE    &kp N1            &kp N2              &kp N3               &kp N4          &kp N5                                              &kp N6                           &kp N7           &kp N8           &kp N9               &kp N0                &kp DELETE
+&kp TAB       &kp Q             &kp W               &kp E                &kp R           &kp T                                               &kp Y                            &kp U            &i_esc           &kp O                &kp P                 &kp BACKSPACE
+&kp GRAVE     &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D       &mt LEFT_GUI F  &kp G                                               &kp H                            &mt RIGHT_GUI J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMI  &kp SQT
+&kp CAPSLOCK  &kp Z             &kp X               &kp C                &kp V           &kp B                   &voldn_mute    &volup_play  &kp N                            &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp BACKSLASH
+                                &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp ESCAPE      &mt LEFT_GUI BACKSPACE  &lt 1 TAB      &lt 2 ENTER  &mt RS(RA(RC(RIGHT_GUI))) SPACE  &kp DELETE       &kp PAGE_DOWN    &kp PAGE_UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -142,11 +142,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans   &trans               &trans               &trans             &trans               &trans                              &trans     &trans                   &trans                  &trans                              &trans                             &trans
-&trans   &kp N1               &kp N2               &kp N3             &kp N4               &kp N5                              &kp N6     &kp N7                   &kp N8                  &kp N9                              &kp N0                             &trans
-&trans   &mt LEFT_SHIFT EXCL  &mt LEFT_CONTROL AT  &mt LEFT_ALT HASH  &mt LEFT_GUI DOLLAR  &kp PRCNT                           &kp CARET  &mt RIGHT_GUI AMPERSAND  &mt RIGHT_ALT ASTERISK  &mt RIGHT_CONTROL LEFT_PARENTHESIS  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &trans
-&kp F12  &kp F1               &kp F2               &kp F3             &kp F4               &kp F5     &trans    &trans         &kp F6     &kp F7                   &kp F8                  &kp F9                              &kp F10                            &kp F11
-                              &trans               &trans             &trans               &trans     &trans    &kp BACKSLASH  &trans     &trans                   &trans                  &trans
+&trans          &trans               &trans               &trans             &trans               &trans                              &trans     &trans                   &trans                  &trans                              &trans                             &trans
+&kp UNDERSCORE  &kp N1               &kp N2               &kp N3             &kp N4               &kp N5                              &kp N6     &kp N7                   &kp N8                  &kp N9                              &kp N0                             &kp PLUS
+&kp MINUS       &mt LEFT_SHIFT EXCL  &mt LEFT_CONTROL AT  &mt LEFT_ALT HASH  &mt LEFT_GUI DOLLAR  &kp PRCNT                           &kp CARET  &mt RIGHT_GUI AMPERSAND  &mt RIGHT_ALT ASTERISK  &mt RIGHT_CONTROL LEFT_PARENTHESIS  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &kp EQUAL
+&kp F12         &kp F1               &kp F2               &kp F3             &kp F4               &kp F5     &trans    &trans         &kp F6     &kp F7                   &kp F8                  &kp F9                              &kp F10                            &kp F11
+                                     &trans               &trans             &trans               &trans     &trans    &kp BACKSLASH  &trans     &trans                   &trans                  &trans
             >;
 
             sensor-bindings =
