@@ -15,14 +15,6 @@
 #define ADJUST 3
 #define extra_layer 4
 
-&mt {
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
-    hold-trigger-on-release;
-};
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
