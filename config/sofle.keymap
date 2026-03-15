@@ -143,11 +143,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &trans               &trans               &trans             &trans               &trans                              &trans     &trans                   &trans                  &trans                              &trans                             &trans
-&kp UNDERSCORE  &kp N1               &kp N2               &kp N3             &kp N4               &kp N5                              &kp N6     &kp N7                   &kp N8                  &kp N9                              &kp N0                             &kp PLUS
-&kp MINUS       &mt LEFT_SHIFT EXCL  &mt LEFT_CONTROL AT  &mt LEFT_ALT HASH  &mt LEFT_GUI DOLLAR  &kp PRCNT                           &kp CARET  &mt RIGHT_GUI AMPERSAND  &mt RIGHT_ALT ASTERISK  &mt RIGHT_CONTROL LEFT_PARENTHESIS  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &kp EQUAL
-&kp F12         &kp F1               &kp F2               &kp F3             &kp F4               &kp F5     &trans    &trans         &kp F6     &kp F7                   &kp F8                  &kp F9                              &kp F10                            &kp F11
-                                     &trans               &trans             &trans               &trans     &trans    &kp BACKSLASH  &trans     &trans                   &trans                  &trans
+&trans          &trans                   &trans                     &trans                 &trans                 &trans                                 &trans        &trans                  &trans                  &trans                      &trans                    &trans
+&kp UNDERSCORE  &kp EXCLAMATION          &kp AT_SIGN                &kp HASH               &kp DOLLAR             &kp PERCENT                            &kp CARET     &kp AMPERSAND           &kp ASTERISK            &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS     &kp PLUS
+&kp MINUS       &mt LEFT_SHIFT NUMBER_1  &mt LEFT_CONTROL NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LEFT_GUI NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6  &mt RIGHT_GUI NUMBER_7  &mt RIGHT_ALT NUMBER_8  &mt RIGHT_CONTROL NUMBER_9  &mt RIGHT_SHIFT NUMBER_0  &kp EQUAL
+&kp F12         &kp F1                   &kp F2                     &kp F3                 &kp F4                 &kp F5        &trans    &trans         &kp F6        &kp F7                  &kp F8                  &kp F9                      &kp F10                   &kp F11
+                                         &trans                     &trans                 &trans                 &trans        &trans    &kp BACKSLASH  &trans        &trans                  &trans                  &trans
             >;
 
             sensor-bindings =
